@@ -26,7 +26,10 @@ function logar() {
 
 function trataResposta(resposta) {
     if (resposta.status == 200) {
-        resposta.json().then(usuario => console.log(usuario));
+        resposta.json().then(usuario => {
+            localStorage.setItem("userDASH", JSON.stringify(usuario));
+            window.location = "relatorio.html";
+        });
 
 
     }
