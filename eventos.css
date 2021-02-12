@@ -1,0 +1,17 @@
+.tituloRelatorio{
+    font-weight: bold;
+    font-size: small;
+}
+
+.linhaRelatorio{
+    font-size: small;
+    word-wrap: break-word;
+}
+
+.linhaPar{
+    background-color: rgb(165, 158, 158);
+}
+
+.linhaImpar{
+    background-color:white;
+}

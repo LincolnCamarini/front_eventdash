@@ -8,19 +8,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script type="text/javascript" src="eventos.js"></script>
+    <link rel="stylesheet" href="eventos.css">
     <title>.: Event Dash :.</title>
 </head>
 
 <body onload="validaUser()">
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center">
-                <h3> .: Event Dashboard :. </h3>
-            </div>
+            <div class="col-12 text-center"><br>
+                <h3> Relatório de Eventos </h3>
+            </div><br><br><br><br>
         </div>
 
 
-
+        
         <div class="row">
             <div class="col-6">
                 <div class="mb-3">
@@ -36,28 +37,73 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" id="botaoGerarRelatorio">
                 <button type="button" class="btn btn-primary" onclick="gerarRelatorio()" >Gerar Relatório</button>
             </div>
         </div>
 
         <br>
+    </div>
 
+    <div class="container-fluid">
+
+          
+        <div class="row tituloRelatorio">
+            
+            <div class="col-1">
+                ID
+            </div>
+            <div class="col-1">
+                Data
+            </div>
+            <div class="col-2">
+                Nome do Alerta
+            </div>
+
+            <div class="col-4">
+                Descrição do Alerta
+            </div>
+
+            <div class="col-2">
+                Equipamento 
+            </div>
+
+            <div class="col-2">
+                Endereço IP
+            </div>
+
+        </div>
+        
+
+
+
+        <div id="relatorio">
+        </div>
+        <br>
+
+    </div>
+
+
+    <div class="container">
         <div class="row">
             
-            <div class="col-6">
+            <div class="col-4" id="botaoLogout">
                 <button type="button" class="btn btn-primary" onclick="logout()">Logout</button>
             </div>
+
+            <div class="col-4" id="botao">
+                <button type="button" class="btn btn-primary" onclick="imprimir()">Gerar PDF</button>
+            </div>
                
-            <div class="col-6">
+            <div class="col-4" id="botaoVoltar">
                 <button type="button" class="btn btn-primary" onclick="window.history.go(-1)">Voltar</button>
             </div>
         </div>
 
-        <div id="relatorio">
-        </div>
+        
 
     </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>

@@ -31,6 +31,13 @@ function preencheRelatorio(lista) {
     document.getElementById("relatorio").innerHTML = strRelatorio;
 }
 
+function imprimir(){
+    document.getElementById("botao").style = "visibility:hidden";
+    window.print();
+    document.getElementById("botao").style = "visibility:visible";
+    
+}
+
 function logout() {
     localStorage.removeItem("userDASH");
     window.location = "index.html";

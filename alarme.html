@@ -15,20 +15,20 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center"><br>
-                <h3> Alarme Dashboard </h3>
+                <h3> Relatório de Alarmes </h3>
             </div><br><br><br><br>
         </div>
-        <div class="row"> 
+        <div class="row">
             <div class="col-1">
-                       ID
-                    </div>
-                    <div class="col-4">
-                       Nome
-                    </div>
-                    <div class="col-7">
-                        Descricao
-                    </div>
+                ID
             </div>
+            <div class="col-4">
+                Nome
+            </div>
+            <div class="col-7">
+                Descricao
+            </div>
+        </div>
 
         <div id="relatorio">
 
@@ -36,12 +36,19 @@
 
         <br>
         <div class="row">
-                        
-            <div class="col-6">
+
+            <div class="col-4">
                 <button type="button" class="btn btn-primary" onclick="logout()">Logout</button>
             </div>
-               
-            <div class="col-6">
+
+            <!--div class="row" id="botao"> -->
+                <div class="col-4" id="botao">
+                    <button type="button" class="btn btn-primary" onclick="imprimir()">Gerar PDF</button>
+                </div>
+        <!--  </div> -->
+
+
+            <div class="col-4">
                 <button type="button" class="btn btn-primary" onclick="window.history.go(-1)">Voltar</button>
             </div>
         </div>
